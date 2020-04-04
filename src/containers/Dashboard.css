@@ -30,8 +30,14 @@
     font-weight: bold;
     text-decoration: none;
     color: black;
+    font-size: 1.2rem;
 }
-
+.disclaimer{
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
 .header{
     text-align: center;
 }

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import {Link, withRouter} from 'react-router-dom';
-import Navbar from "../components/Navbar/Navbar";
 import { getCompanies } from '../actions/company-action'
 import './Dashboard.css'
 import Loader from "./App/Loader";
@@ -272,6 +271,8 @@ class Docs extends Component {
                                 onSearch={value => this.getSearchResults(value, companies.companies)}
                             />
                         </AutoComplete>
+                        <div className={"disclaimer"}>All data shown on our platform is collected from <a href={"https://www.forbes.com/"} target={"blank"}>Forbes</a> ,<a href={"https://www.businessinsider.com/"} target={"blank"}>Business Insider</a> and commmunity resources.</div>
+
                     </div>
                     {this.state.searchResultLoading &&
                     <div style={{textAlign:'center'}}>
