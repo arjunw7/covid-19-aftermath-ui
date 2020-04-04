@@ -368,6 +368,7 @@ const locationOptions = [
     { value: "Kota"},
     { value: "Kottayam"},
     { value: "Kozhikode"},
+    { value: "Krakow"},
     { value: "Krasnodar"},
     { value: "Krasnoyarsk"},
     { value: "Kuala Lumpur"},
