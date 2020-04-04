@@ -435,6 +435,7 @@ const locationOptions = [
     { value: "Manchester"},
     { value: "Mandalay"},
     { value: "Mangalore"},
+    { value: "Manhattan"},
     { value: "Manila"},
     { value: "Maoming"},
     { value: "Maputo"},
