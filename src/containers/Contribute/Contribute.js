@@ -903,12 +903,12 @@ class Contribute extends Component {
                         >
 
                             <Form.Item label="Company Name">
-                                <Input autoSize={true} style={{ width: 625 }}
+                                <Input autoSize={true} style={{ width: '100%' }}
                                        onChange={(text) => this.setState({companyName:text.target.value}) }/>
                             </Form.Item>
                             <Form.Item label="Select Location">
                                 <AutoComplete
-                                    style={{ width: 625 }}
+                                    style={{ width: '100%' }}
                                     options={locationOptions}
                                     placeholder="enter location.."
                                     filterOption={(inputValue, option) =>
@@ -919,7 +919,7 @@ class Contribute extends Component {
                             </Form.Item>
                             <Form.Item label="Select industry">
                                 <AutoComplete
-                                    style={{ width: 625 }}
+                                    style={{ width: '100%' }}
                                     options={industryOptions}
                                     placeholder="enter industry name"
                                     filterOption={(inputValue, option) =>
@@ -949,7 +949,7 @@ class Contribute extends Component {
                                 </Radio.Group>
                             </Form.Item>
                             <Form.Item label="Where to apply?">
-                                <Input  autoSize={true} style={{ width: 625 }} onChange={(text) => this.setState({hiringLink:text.target.value}) }/>
+                                <Input  autoSize={true} style={{ width: '100%' }} onChange={(text) => this.setState({hiringLink:text.target.value}) }/>
                             </Form.Item>
                             <Form.Item label="">
                                 <Button onClick={()=>this.submit()}>Submit</Button>
