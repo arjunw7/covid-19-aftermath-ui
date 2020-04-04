@@ -7,7 +7,7 @@ import './Dashboard.css'
 import Loader from "./App/Loader";
 import { Input,AutoComplete,Table, Tag,Spin } from 'antd';
 import {
-    PieChart, Pie, Sector, Cell,  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+    PieChart, Pie, Sector, Cell,  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 
 } from 'recharts';
 
@@ -301,15 +301,17 @@ class Docs extends Component {
                         <div className={"col-md-1"}>
                             {/*blank section*/}
                         </div>
-                        <div className={"col-md-5"}>
+                        <div className={"col-md-5"} ref={"pieDiv"}>
                             <div className={"graph"}>
                                 <div className={"graphHead"}>Overall Hiring Status</div>
+                                <div  style={{ width: '100%', height: 300 }}>
+                                <ResponsiveContainer>
                                 <PieChart width={800} height={400} onMouseEnter={this.onPieEnter}>
                                     <Pie
                                         data={this.getHiringStatusSplit(companies.companies)}
-                                        cx={200}
-                                        cy={120}
-                                        innerRadius={60}
+                                        // cx={200}
+                                        // cy={120}
+                                        innerRadius={30}
                                         outerRadius={80}
                                         fill="#8884d8"
                                         paddingAngle={5}
@@ -322,14 +324,16 @@ class Docs extends Component {
                                     </Pie>
                                     <Legend verticalAlign="bottom" height={36} align={"left"}/>
                                 </PieChart>
+                                </ResponsiveContainer>
+                                </div>
                             </div>
                         </div>
-                        <div className={"col-md-5"}>
+                        <div className={"col-md-5"} ref={"pieDiv"}>
                             <div className={"graph"}>
                                 <div className={"graphHead"}>Sectors with most demand</div>
+                                <div  style={{ width: '100%', height: 300 }}>
+                                <ResponsiveContainer>
                                 <BarChart
-                                    width={400}
-                                    height={300}
                                     data={this.getSectorCompanies(companies.companies)}
                                     margin={{
                                         top: 5, right: 30, left: 5, bottom: 5,
@@ -343,6 +347,8 @@ class Docs extends Component {
                                     <Bar dataKey="total" fill="#8884d8" />
                                     <Bar dataKey="hirings" fill="#00C49F" />
                                 </BarChart>
+                                </ResponsiveContainer>
+                            </div>
                             </div>
                         </div>
                         <div className={"col-md-1"}>
