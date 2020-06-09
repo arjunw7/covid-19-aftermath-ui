@@ -123,3 +123,26 @@
 .recharts-wrapper{
     height: 300px !important;
 }
+
+/* mobile view */
+@media only screen and (max-width: 700px){
+   .navigation{
+    padding: 2rem !important;
+}
+.ant-input-group{
+  width: auto !important;
+}
+.scroll{
+    max-width: 332px;
+    overflow-x: scroll;
+}
+.formHead{
+   font-size: 1rem !important;
+   line-height: 1rem !important;
+}
+.contributionForm{
+    width: auto !important;
+    margin-left: auto !important
+}
+}
+

@@ -293,7 +293,7 @@ class Docs extends Component {
                         <div className={"tableHeader"}>Top companies currently hiring</div>
                         {companies.companies.length>0 && <Table columns={columns} dataSource={companies.hirings} tableLayout={"fixed"} size={"middle"}/>}
                     </div>
-                    <div className={"statsSection"}>
+                    <div className={"statsSection scroll"}>
                         <div className={"tableHeader"}>Top companies currently laying off</div>
                         {companies.companies.length>0 && <Table columns={columns} dataSource={companies.layoffs} />}
                     </div>
