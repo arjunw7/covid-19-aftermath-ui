@@ -882,8 +882,8 @@ class Contribute extends Component {
                         <div className="navigationRight">
                             <Link to={"/"}>
                             <div className={"navigationLiveButton"}>LIVE</div>
-                            <div className={"contributeButton"}>
-                               Hiring Freeze and Layoffs Tracker
+                            <div className={"contributeButton freeze"}>
+                               Hiring Freeze / Layoffs Tracker
                             </div>
                             </Link>
                         </div>
@@ -952,7 +952,11 @@ class Contribute extends Component {
                                 <Input  autoSize={true} style={{ width: '100%' }} onChange={(text) => this.setState({hiringLink:text.target.value}) }/>
                             </Form.Item>
                             <Form.Item label="">
-                                <Button onClick={()=>this.submit()}>Submit</Button>
+                                <Button style={{color: '#fff',
+    backgroundColor:'#1890ff',
+    borderColor: '#1890ff',
+    textShadow: '0 -1px 0 rgba(0, 0, 0, 0.12)',
+    boxShadow: '0 2px 0 rgba(0, 0, 0, 0.045)'}} onClick={()=>this.submit()}>Submit</Button>
                             </Form.Item>
 
                         </Form>
