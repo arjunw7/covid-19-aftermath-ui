@@ -951,7 +951,7 @@ class Contribute extends Component {
                             <Form.Item label="Where to apply?">
                                 <Input  autoSize={true} style={{ width: '100%' }} onChange={(text) => this.setState({hiringLink:text.target.value}) }/>
                             </Form.Item>
-                            <Form.Item label="">
+                             <Form.Item label="">
                                 <Button style={{color: '#fff',
     backgroundColor:'#1890ff',
     borderColor: '#1890ff',
